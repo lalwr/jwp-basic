@@ -1,7 +1,8 @@
+/bin/
 /.settings/
 /target/
 /.classpath
 /.project
-/jwp-basic.iml
-/.idea/
-/tomcat.8080/
+/.idea
+*.iml
+.DS_Store
