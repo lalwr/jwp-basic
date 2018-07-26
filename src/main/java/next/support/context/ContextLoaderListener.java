@@ -19,6 +19,7 @@ public class ContextLoaderListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
+        populator.setSqlScriptEncoding("UTF-8"); //한글깨짐 설정
         populator.addScript(new ClassPathResource("jwp.sql"));
         DatabasePopulatorUtils.execute(populator, ConnectionManager.getDataSource());
 

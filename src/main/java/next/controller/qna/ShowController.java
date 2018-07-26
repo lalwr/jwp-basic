@@ -18,3 +18,5 @@ public class ShowController implements Controller {
         return "/qna/show.jsp";
     }
 }
+
+
